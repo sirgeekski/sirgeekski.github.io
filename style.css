@@ -1,0 +1,30 @@
+:root { --red: #ff3d5a; --ink: #1d1f24; --muted: #5d6270; --line: #e7e8ec; --bg: #fff; --soft: #f7f7f9; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.6; color: var(--ink); background: var(--bg); }
+a { color: #c8102e; }
+.top, footer, main, .legal { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 18px; padding-bottom: 18px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 20px; color: var(--ink); text-decoration: none; }
+.brand img { border-radius: 8px; }
+.top nav a, footer nav a { margin-left: 18px; color: var(--muted); text-decoration: none; }
+.top nav a:hover, footer nav a:hover { color: var(--ink); }
+.hero { text-align: center; padding: 56px 0 40px; }
+.hero img { border-radius: 22px; box-shadow: 0 8px 24px rgba(255, 61, 90, .3); }
+.hero h1 { font-size: clamp(28px, 5vw, 44px); line-height: 1.15; margin: 24px auto 12px; max-width: 760px; }
+.hero p { color: var(--muted); font-size: 18px; max-width: 640px; margin: 0 auto; }
+section { padding: 32px 0; }
+h2 { font-size: 26px; margin: 0 0 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.card { background: var(--soft); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+.card h3 { margin: 0 0 6px; font-size: 18px; }
+.card p { margin: 0; color: var(--muted); }
+.steps { padding-left: 22px; }
+.steps li { margin-bottom: 8px; }
+.note { color: var(--muted); margin-top: 16px; }
+details { border-bottom: 1px solid var(--line); padding: 12px 0; }
+summary { cursor: pointer; font-weight: 600; }
+footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--line); padding-top: 20px; padding-bottom: 32px; margin-top: 32px; color: var(--muted); }
+footer div { display: flex; align-items: center; gap: 8px; }
+footer nav a:first-child { margin-left: 0; }
+.legal { max-width: 760px; padding-bottom: 40px; }
+@media (max-width: 560px) { .top nav a { margin: 0 14px 0 0; } }

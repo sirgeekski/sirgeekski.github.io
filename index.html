@@ -3,24 +3,88 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ReelForge</title>
-<style>
-body { font-family: system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; line-height: 1.6; color: #1d1f24; background: #fff; }
-a { color: #c8102e; }
-footer { margin-top: 48px; font-size: 14px; color: #666; }
-</style>
+<title>ReelForge – Edit and publish short videos</title>
+<meta name="description" content="ReelForge is a desktop app that turns long videos into short vertical clips and publishes them to your own YouTube, TikTok and Instagram accounts.">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" href="app-icon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>ReelForge</h1>
-<p>ReelForge is a personal video tool that runs on its owner's own computer. It edits short videos (trimming,
-vertical formatting, captions) and publishes them to the owner's own YouTube, TikTok and Instagram accounts
-using each platform's official API.</p>
-<p>ReelForge is not a public service. It is used only by its owner (<a href="https://github.com/sirgeekski">sirgeekski</a>)
-to manage their own accounts. It does not offer sign-ups and does not access anyone else's accounts.</p>
-<ul>
-<li><a href="privacy.html">Privacy policy</a></li>
-<li><a href="terms.html">Terms of service</a></li>
-</ul>
-<footer>Contact: <a href="https://github.com/sirgeekski">github.com/sirgeekski</a></footer>
+<header class="top">
+  <a class="brand" href="index.html"><img src="app-icon.png" alt="" width="32" height="32">ReelForge</a>
+  <nav><a href="#features">Features</a><a href="#how">How it works</a><a href="#platforms">Platforms</a><a href="#faq">FAQ</a></nav>
+</header>
+
+<main>
+<section class="hero">
+  <img src="app-icon.png" alt="ReelForge app icon" width="96" height="96">
+  <h1>Turn long videos into short ones, and post them where you want.</h1>
+  <p>ReelForge is a desktop app for creators. It cuts long videos into vertical Shorts, Reels and TikToks, adds
+  captions and transitions, and publishes them to your own accounts through each platform's official API.</p>
+</section>
+
+<section id="features">
+  <h2>Features</h2>
+  <div class="grid">
+    <div class="card"><h3>✂ Clip long videos</h3><p>Load a podcast, stream or vlog and ReelForge splits it into
+    one-minute parts at sentence boundaries, or picks the best moments, ready to post as a numbered series.</p></div>
+    <div class="card"><h3>🎬 Edit in vertical</h3><p>Trim, crop to 9:16, add burned-in captions, colour grades,
+    music and smooth transitions such as whip pans, zooms and blur dissolves.</p></div>
+    <div class="card"><h3>💬 Automatic captions</h3><p>Speech is transcribed on your own computer, so captions
+    are word-accurate and your audio never leaves your machine for transcription.</p></div>
+    <div class="card"><h3>📅 Scheduled publishing</h3><p>Queue videos with a review step: you approve each one and
+    its caption before it is posted, and posts are spaced out over the day.</p></div>
+    <div class="card"><h3>📚 Media library</h3><p>Keep source videos, finished exports and reusable editing
+    templates in one place.</p></div>
+    <div class="card"><h3>🔒 Runs locally</h3><p>ReelForge runs on your own PC. Your videos, drafts and account
+    connections are stored on your computer, not on our servers.</p></div>
+  </div>
+</section>
+
+<section id="how">
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><strong>Add a video.</strong> Import a file you own, or one you are licensed to use.</li>
+    <li><strong>Edit or clip it.</strong> Use the editor, or let ReelForge cut it into a series of parts.</li>
+    <li><strong>Review.</strong> Preview each clip and edit its title, caption and privacy setting.</li>
+    <li><strong>Publish.</strong> ReelForge uploads the clip to the account you connected, at the time you chose.</li>
+  </ol>
+</section>
+
+<section id="platforms">
+  <h2>Supported platforms</h2>
+  <div class="grid">
+    <div class="card"><h3>TikTok</h3><p>Connect with Login Kit and post with the Content Posting API. Before each
+    post you see your TikTok username, choose who can view the video, and set comments, Duet and Stitch.
+    You can also send videos to your TikTok inbox as drafts and finish them in the TikTok app.</p></div>
+    <div class="card"><h3>YouTube</h3><p>Upload Shorts with the YouTube Data API, with title, description, tags and
+    privacy chosen by you.</p></div>
+    <div class="card"><h3>Instagram</h3><p>Publish Reels to an Instagram professional account with the Instagram
+    Graph API, or download the clip and post it from the Instagram app.</p></div>
+  </div>
+  <p class="note">You connect your accounts yourself through each platform's official sign-in page. ReelForge never
+  sees your passwords, and you can disconnect at any time from the app or from the platform's settings.</p>
+</section>
+
+<section id="faq">
+  <h2>FAQ</h2>
+  <details><summary>Who is ReelForge for?</summary><p>Creators who repurpose their own long-form videos into short
+  clips. It is currently used by its developer to manage their own channels.</p></details>
+  <details><summary>Does ReelForge need an account?</summary><p>No. There is no ReelForge account or login. You
+  only sign in to the platforms you want to post to, on their own websites.</p></details>
+  <details><summary>What data does ReelForge store?</summary><p>Only what it needs to post for you, stored on your
+  computer. See the <a href="privacy.html">privacy policy</a>.</p></details>
+  <details><summary>Does it post without my approval?</summary><p>Not unless you turn the review step off. By
+  default every clip waits for you to approve it and its caption.</p></details>
+  <details><summary>How much does it cost?</summary><p>ReelForge is free to use.</p></details>
+</section>
+</main>
+
+<footer>
+  <div><img src="app-icon.png" alt="" width="20" height="20"> ReelForge</div>
+  <nav><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of service</a>
+  <a href="https://github.com/sirgeekski">Contact</a></nav>
+</footer>
 </body>
 </html>
